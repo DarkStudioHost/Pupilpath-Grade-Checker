@@ -1,1 +1,1 @@
-# Pupilpath-Grade-Checker
+# Pupilpath Grade Checker

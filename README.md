@@ -11,7 +11,7 @@ Introduction..
 Follow these simple steps to get the grade checker working in no time.
 
 ### Downloading Python
-You can download python here - [here](https://python.org){:target="_blank"}.
+You can download python here - [here](https://python.org).
 
 NOTE: Make sure to download python to PATH.
 

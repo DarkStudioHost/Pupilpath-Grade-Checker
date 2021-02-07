@@ -18,7 +18,7 @@ NOTE: Make sure to download python to PATH.
 ### Installing Librarys
 Pupilpath Checker uses two main librarys - **rich** and **selenium**.
 
-To install these librarys open your **command prompt** if on windows or **terminal** if on macOS.
+To install these librarys open your **Command Prompt** if on windows or **Terminal** if on macOS.
 
 Type these two lines one by one:
 
@@ -27,7 +27,7 @@ Type these two lines one by one:
 `pip install selenium`
 
 ### Downloading ChromeDriver
-Pupilpath Checker requires **google chrome** and **chromedriver** installed in order to connect to the pupilpath website.
+Pupilpath Checker requires **Google Chrome** and **ChromeDriver** installed in order to connect to the pupilpath website.
 
 If you haven't already download chrome [here](https://www.google.com/chrome/).
 
@@ -35,3 +35,6 @@ Next download the chromedriver version that fits your google chrome version [her
 
 ### Thats it!
 Thats the installation! Wasn't so hard, right? Continue to the tutorial section to learn how to use the Grade Checker.
+
+<a name="tutorial"></a>
+## So you've downloaded everything and you want to learn how to use the program

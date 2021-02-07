@@ -2,9 +2,9 @@
 Introduction.. 
 
 ## Table of contents
-[Installation](#installation)
+* [Installation](#installation)
 
-[How to use](#tutorial)
+* [How to use](#tutorial)
 
 <a name="installation"></a>
 ## Installation

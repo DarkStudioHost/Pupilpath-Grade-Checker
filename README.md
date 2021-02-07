@@ -1,7 +1,13 @@
 # Pupilpath Grade Checker
 Introduction.. 
 
+# Table of contents
+[Installation](#installation)
+[How to use](#tutorial)
+
+<a name="installation"></a>
 ## Installation
+Follow these simple steps to get the grade checker working in no time.
 
 ### Downloading Python
 You can download python here - [here](https://python.org).

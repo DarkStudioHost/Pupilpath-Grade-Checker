@@ -11,7 +11,7 @@ Ever get tired of having visit the pupilpath website every time and wish there w
 Follow these simple steps to get the grade checker working in no time.
 
 ### Downloading Python
-You can download python here - [here](https://python.org).
+You can download python [here](https://python.org).
 
 NOTE: Make sure to download python to PATH.
 

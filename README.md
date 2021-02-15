@@ -36,5 +36,7 @@ Next download the chromedriver version that fits your google chrome version [her
 ### Thats it!
 Thats the installation! Wasn't so hard, right? Continue to the tutorial section to learn how to use the Grade Checker.
 
+NOTE: If the installation was too difficult and you couldn't get through it there is always a standalone executable file that can be opened in one click (this is not recommended because of slower startup times) download - SOON
+
 <a name="tutorial"></a>
 ## So you've downloaded everything and you want to learn how to use the program

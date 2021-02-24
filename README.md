@@ -4,6 +4,9 @@ Ever get tired of having to visit the Pupilpath website every time and wish ther
 
 ![Example](https://media.discordapp.net/attachments/618866489147260943/814228315543175248/unknown.png?width=1440&height=455)
 
+##Latest Release
+* https://github.com/DarkStudioHost/Pupilpath-Grade-Checker/releases/tag/1.0.0
+
 ## Table of contents
 * [Installation](#installation)
 

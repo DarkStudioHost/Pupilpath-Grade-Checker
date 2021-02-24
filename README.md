@@ -1,4 +1,9 @@
 # Pupilpath Grade Checker
+[![GitHub Release](https://img.shields.io/github/v/release/DarkStudioHost/Pupilpath-Grade-Checker.svg?longCache=true&style=for-the-badge)
+[![GitHub Issues](https://img.shields.io/github/issues/DarkStudioHost/Pupilpath-Grade-Checker.svg?longCache=true&style=for-the-badge)](https://github.com/DarkStudioHost/Pupilpath-Grade-Checker/issues)
+[![GitHub license](https://img.shields.io/github/license/DarkStudioHost/Pupilpath-Grade-Checker.svg?style=for-the-badge)](https://github.com/DarkStudioHost/Pupilpath-Grade-Checker/blob/master/LICENSE)
+[![Install](https://img.shields.io/badge/Install-red.svg?longCache=true&style=for-the-badge)](#installation)
+
 Ever get tired of having to visit the Pupilpath website every time and wish there was a desktop program to check your grades or find the user interface of the Pupilpath website bad? Well, this program is for you.
 
 ![Example](https://media.discordapp.net/attachments/618866489147260943/814228315543175248/unknown.png?width=1440&height=455)

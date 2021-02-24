@@ -1,6 +1,5 @@
 import json
 import math
-from pathlib import PosixPath
 import requests
 
 import tkinter
@@ -18,7 +17,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.common.exceptions import NoSuchElementException
 
-print("""
+print(r"""
  ____              _ _             _   _      ____ _               _
 |  _ \ _   _ _ __ (_| |_ __   __ _| |_| |__  / ___| |__   ___  ___| | _____ _ __
 | |_) | | | | '_ \| | | '_ \ / _` | __| '_ \| |   | '_ \ / _ \/ __| |/ / _ | '__|
@@ -84,12 +83,15 @@ with console.status("Working on tasks", spinner="bouncingBar"):
 
             "department": browser.find_element_by_xpath(f'//*[@id="progress-card"]/tbody/tr[{i}]/td[4]').text,
 
-            "average": browser.find_element_by_xpath(f'//*[@id="progress-card"]/tbody/tr[{i}]/td[5]/span').text if browser.find_elements_by_xpath(f'//*[@id="progress-card"]/tbody/tr[{i}]/td[5]/span') else "-"
+            "average": float(browser.find_element_by_xpath(f'//*[@id="progress-card"]/tbody/tr[{i}]/td[5]/span').text) if browser.find_elements_by_xpath(f'//*[@id="progress-card"]/tbody/tr[{i}]/td[5]/span') else "-"
         }
 
         for element in elements:
             studentData[element].append(elements.get(element))
 
+    filteredList = list(filter(lambda i: isinstance(i, float), studentData["average"]))
+    studentAverage = round(sum(filteredList) / len(filteredList))
+    
     browser.close()
     
     #Generating scorecard
@@ -112,18 +114,30 @@ with console.status("Working on tasks", spinner="bouncingBar"):
         draw.text(position, title, fill="white", font=boldFont)
         
         if studentData[title.lower()]:
-            text = "\n".join(studentData[title.lower()])
+            text = "\n".join(map(str, studentData[title.lower()]))
 
             draw.text(valuePosition, text=text, fill="white", font=ImageFont.truetype(f"Storage/Fonts/Roboto-{'Bold' if title == 'Average' else 'Light'}.ttf", 23))
     
+    def getOverallGrade(grade):
+        gradesMapping = {0: "Failing", 60: "Borderline", 80: "Average", 90: "Honors"}
+
+        key = None
+
+        for mappedGrade in gradesMapping.keys():
+            if mappedGrade <= grade:
+                key = mappedGrade
+        
+        return gradesMapping[key]
+
     scoreCard = [
-        ((1150, 450), "Classes: ", "p"),
-        ((1300, 450), "Average: ", "p"),
-        ((1450, 450), "Overall: ", "None")
+        ((1160, 425), "Classes: ", str(len(gradeElement)), (1257, 425)),
+        ((1300, 425), "Average: ", str(studentAverage), (1405, 425)),
+        ((1445, 425), "Overall: ", getOverallGrade(studentAverage), (1535, 425))
     ]
 
     for position, text, value, valuePosition in scoreCard:
         draw.text(position, text=text, fill="white", font=ImageFont.truetype(f"Storage/Fonts/Roboto-Bold.ttf", 24))
+        
         draw.text(valuePosition, text=value, fill="white", font=ImageFont.truetype(f"Storage/Fonts/Roboto-Light.ttf", 24))
         
     scoreTemp.save("Storage/TemporaryFiles/Scorecard.png")

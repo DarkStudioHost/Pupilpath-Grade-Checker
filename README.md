@@ -1,6 +1,8 @@
 # Pupilpath Grade Checker
 Ever get tired of having to visit the Pupilpath website every time and wish there was a desktop program to check your grades or find the user interface of the Pupilpath website bad? Well, this program is for you.
 
+![Example](https://media.discordapp.net/attachments/618866489147260943/814228315543175248/unknown.png?width=1440&height=455)
+
 ## Table of contents
 * [Installation](#installation)
 

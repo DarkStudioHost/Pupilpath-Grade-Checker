@@ -1,5 +1,5 @@
 # Pupilpath Grade Checker
-Ever get tired of having visit the pupilpath website every time and wish there was a desktop program to check your grades or find the user interface of the pupilpath website bad? Well this program is for you.
+Ever get tired of having to visit the Pupilpath website every time and wish there was a desktop program to check your grades or find the user interface of the Pupilpath website bad? Well, this program is for you.
 
 ## Table of contents
 * [Installation](#installation)

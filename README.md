@@ -46,3 +46,4 @@ NOTE: If the installation was too difficult and you couldn't get through it ther
 
 <a name="tutorial"></a>
 ## So you've downloaded everything and you want to learn how to use the program
+* This is coming soon!
